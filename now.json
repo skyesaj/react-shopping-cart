@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "shopping-cart",
+  "builds": [
+    {
+      "src": "shopping-cart/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "shopping-cart/$1" }]
+}
